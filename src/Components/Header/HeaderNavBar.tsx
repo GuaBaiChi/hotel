@@ -3,7 +3,7 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import "./Header.css";
+import "./Header.css";
 
 function HeaderNavbar() {
   const [collapsed, setCollapsed] = useState(true);
@@ -29,19 +29,26 @@ function HeaderNavbar() {
 
 
   return (
-    <Navbar expand="lg" bg="dark" variant="dark" fixed="top" expanded={!collapsed}>
-      <Container>
-        <Navbar.Brand href="/">Hotel Website</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#Home">Home</Nav.Link>
-            <Nav.Link href="#About">About</Nav.Link>
-            <Nav.Link href="#Book">Book</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div>
+      <div>
+        <Navbar expand="lg" bg="dark" variant="dark" fixed="top" expanded={!collapsed}>
+          <Container>
+            <Navbar.Brand href="/">Hotel Website</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="#Home">Home</Nav.Link>
+                <Nav.Link href="#About">About</Nav.Link>
+                <Nav.Link href="#Book">Book</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
+      <div className="header-container">
+        <p>Welcome to Luxury Resort</p>
+      </div>
+    </div>
   );
 }
 

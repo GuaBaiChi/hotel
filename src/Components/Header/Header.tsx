@@ -5,7 +5,9 @@ import {
 } from "../CommonUtils"
 // import { faBars } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import "./Header.css";
+import "./Header.css";
+
+import "./ScreenHeading.css";
 
 export default function Header() {
   const [selectedScreen, setSelectedScreen] = useState(0);
@@ -32,12 +34,14 @@ export default function Header() {
   };
 
   return (
-    <div
-      className="header-container"
-      onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
-      <div className="header-parent">
-        <div className="header-logo">
-          <span>Welcome to Luxury Resort</span>
+    <div className="heading-container">
+      <div
+        className="header-container"
+        onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
+        <div className="header-parent">
+          <div className="header-logo">
+            <span>Welcome to Luxury Resort</span>
+          </div>
         </div>
       </div>
     </div>

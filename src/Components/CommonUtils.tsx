@@ -1,6 +1,4 @@
-// import Home from "../PortfolioContainer/Home/Home";
-// import AboutMe from "../PortfolioContainer/AboutMe/AboutMe";
-// import Resume from "../PortfolioContainer/Resume/Resume";
+import React from 'react';
 import Home from "./Home/Home";
 import About from "./About/About";
 import Book from "./Book/Book";
@@ -10,12 +8,12 @@ export type ScreenProps = {
 };
 
 export type Screen = {
-  component: (props: ScreenProps) => JSX.Element;
+  component: React.FC<ScreenProps>;
   alreadyRendered: boolean;
   props: ScreenProps;
 };
 
-export const TOTAL_SCREENS = new Array<Screen>(
+export const TOTAL_SCREENS: Screen[] = [
   {
     component: Home,
     alreadyRendered: false,
@@ -37,7 +35,7 @@ export const TOTAL_SCREENS = new Array<Screen>(
       screen_name: "Book",
     },
   },
-);
+];
 
 export const GET_SCREEN_INDEX = (screen_name: string) => {
   if (!screen_name) return -1;
