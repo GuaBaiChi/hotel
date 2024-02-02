@@ -3,7 +3,7 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "./Header.css";
+// import "./Header.css";
 
 function HeaderNavbar() {
   const [collapsed, setCollapsed] = useState(true);
@@ -45,8 +45,8 @@ function HeaderNavbar() {
           </Container>
         </Navbar>
       </div>
-      <div className="header-container">
-        <p>Welcome to Luxury Resort</p>
+      <div className="Header">
+        <p>Welcome to Fhloston Paradise!</p>
       </div>
     </div>
   );

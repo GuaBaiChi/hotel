@@ -1,0 +1,9 @@
+.Footer {
+  position: fixed; /* or 'absolute' if you want it fixed relative to its closest positioned ancestor */
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-family: "Poppins ExtraBold";
+  padding: 45px;
+}
