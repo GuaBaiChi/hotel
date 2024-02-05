@@ -1,5 +1,5 @@
 import React from 'react';
-// import './About.css'
+import './About.css'
 
 interface Hotel {
   name: string;
@@ -11,7 +11,7 @@ interface Hotel {
 
 function HotelLandingPage({ hotel }: { hotel: Hotel }) {
   return (
-    <div className="">
+    <div className="About">
       <h1>{hotel.name}</h1>
       <p>{hotel.description}</p>
       <main>

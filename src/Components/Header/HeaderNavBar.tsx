@@ -33,7 +33,7 @@ function HeaderNavbar() {
       <div>
         <Navbar expand="lg" bg="dark" variant="dark" fixed="top" expanded={!collapsed}>
           <Container>
-            <Navbar.Brand href="/">Hotel Website</Navbar.Brand>
+            <Navbar.Brand href="/">Fhloston Paradise</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

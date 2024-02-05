@@ -1,5 +1,5 @@
 import React from 'react';
-// import './App.css'
+import './App.css'
 import HeaderNavBar from './Components/Header/HeaderNavBar';
 import About from './Components/About/About';
 import Book from './Components/Book/Book';
@@ -17,8 +17,8 @@ const App: React.FC = () => {
       {/* <SiteDescription /> */}
       <HeaderNavBar />
       {/* <NavBar /> */}
-      <ImageCarousel />
-      {/* <CarouselTest /> */}
+      {/* <ImageCarousel /> */}
+      <CarouselTest />
       <About />
       <Book />
       <Footer />

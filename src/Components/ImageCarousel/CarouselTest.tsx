@@ -1,17 +1,15 @@
+import React from 'react';
+
 import Carousel from 'react-bootstrap/Carousel';
 import ShadowBox from "./ShadowBox"
 
-// import ExampleCarouselImage from 'components/ExampleCarouselImage';
+// import images
 import shipOcean from '../../Images/shipOcean.png'
 import shipPlanet from '../../Images/shipPlanet.png'
 import shipSunset from '../../Images/shipSunset.jpg'
 // import shipSunset from '../../Images/shipSunset.jpg'
 // import shipSunset from '../../Images/shipSunset.jpg'
-// src / images / shipSunset.jpg
-
-
-import jsxImg from './jsx-ui.png';
-import React from 'react';
+import './Carousel.css'
 
 export const SHIP_PICS = [
   {
