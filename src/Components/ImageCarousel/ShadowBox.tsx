@@ -11,7 +11,7 @@ type ShadowBoxProps = {
 
 export default function ShadowBox({ children, mode }: ShadowBoxProps) {
 
-    
+
     // Default to top
     let boxStyle = ShadowBoxTopStyle;
     if (mode === "mid") {
@@ -51,6 +51,7 @@ const ShadowBoxMidStyle = {
 }
 
 const ShadowBoxInnerStyle = {
-    "margin": "2em",
+    // "margin": "2em",
+    // This is commented out as it otherwise creates space with the content below.
     "paddingBottom": "1em"
 }

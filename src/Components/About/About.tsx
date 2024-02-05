@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'
+import './About.css';
 
 interface Hotel {
   name: string;
@@ -25,11 +25,10 @@ function HotelLandingPage({ hotel }: { hotel: Hotel }) {
           <button>Book Now</button>
         </div>
       </main>
-      <p>Contact us: {hotelData.email}</p>
+      <p>Contact us: {hotel.email}</p>
     </div>
   );
 }
-
 
 export const hotelData: Hotel = {
   name: "Luxury Resort",
@@ -39,11 +38,12 @@ export const hotelData: Hotel = {
   email: "Fhloston@Paradise.com",
 };
 
-
 const About: React.FC = () => {
   return (
-    <div className="About">
-      <HotelLandingPage hotel={hotelData} />
+    <div className="AboutContainer">
+      <div className="About">
+        <HotelLandingPage hotel={hotelData} />
+      </div>
     </div>
   );
 };
