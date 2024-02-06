@@ -41,30 +41,28 @@ export default function CarouselTest() {
   const carouselItemData = SHIP_PICS.map((item) => {
     return (
       <Carousel.Item>
-        <div className="row" style={CarouselRowStyle}>
-          <div className="col-lg-2 col-sm-hidden"></div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <img src={item.image} alt={"can't load"} style={ImageStyle} />
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12" style={ContentStyle}>
-            {/* <p style={{ "fontSize": "20pt" }}>{item.heading}</p> */}
-            {/* <p>{item.paragraph}</p> */}
-            {/* {item.link && <a href={item.link} style={LinkStyle} target="_blank" rel="noopener">{item.link}</a>} */}
-          </div>
-          <div className="col-lg-2 col-sm-hidden"></div>
+        <div style={{ "backgroundImage": `url(${item.image})`, "height": "500px", "backgroundSize": "contain", "backgroundRepeat": "no-repeat", "backgroundPositionX": "center" }}>
+          {/* <img src={item.image} alt={"can't load"} style={ImageStyle} /> */}
         </div>
       </Carousel.Item>
     );
   });
 
   return (
-    <ShadowBox mode="top">
-      <div style={ShadowTopStyle}>
-        <Carousel>
-          {carouselItemData}
-        </Carousel>
-      </div >
-    </ShadowBox>
+    <div style={{ "backgroundColor": "black" }}>
+
+      <Carousel>
+        {carouselItemData}
+      </Carousel>
+
+    </div>
+    // <ShadowBox mode="top">
+    //   <div style={ShadowTopStyle}>
+    //     <Carousel>
+    //       {carouselItemData}
+    //     </Carousel>
+    //   </div >
+    // </ShadowBox>
   );
 }
 
@@ -105,5 +103,7 @@ const ShadowTopStyle = {
 }
 
 const CarouselRowStyle = {
-  "minHeight": "350px"
+  "minHeight": "350px",
+  "marginLeft": "auto",
+  "marginRight": "auto"
 }
