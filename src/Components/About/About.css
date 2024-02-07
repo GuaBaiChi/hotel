@@ -1,11 +1,6 @@
-.AboutContainer {
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: black;
-}
-
 .About {
   text-align: center;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Set background color to match navbar and footer */
   padding: 10%; 
+  color: white;
 }

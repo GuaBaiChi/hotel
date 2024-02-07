@@ -1,18 +1,49 @@
-/* .carousel-container {
+/* CarouselStyles.css */
+
+.PromoOuterStyle {
+  padding-bottom: 10vh;
+}
+
+.PromoInnerStyle {
+  /* margin: 10% 20px 10px 20px; */
+  display: contents;
+  /* display: flex; */
+  justify-content: center;
+  line-height: 1.5rem;
+}
+
+.LinkStyle {
+  word-wrap: break-word;
+}
+
+.ContentStyle {
+  padding: 3em;
+  color: white;
+  font-family: Audiowide;
+  text-align: center;
+}
+
+.ImageStyle {
+  max-width: 50vw;
+  max-height: 30vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CarouselStyle {
+  /* padding-left: 10vw; */
+  /* padding-right: 10vw; */
+  /* commenting out because it makes the paragraph contents too thin on mobile. */
+}
+
+.ShadowTopStyle {
+  display: inline-block;
   width: 100%;
-  height: 200px;
-  overflow: hidden; 
-  position: relative; 
 }
 
-
-.carousel-container {
-  display: flex;
-  justify-content: space-between; 
+.CarouselRowStyle {
+  min-height: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.carousel-item {
-  flex: 0 0 auto; 
-  width: 300px; 
-  height: 200px; 
-} */

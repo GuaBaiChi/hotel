@@ -49,12 +49,10 @@ export default function CarouselTest() {
   });
 
   return (
-    <div style={{ "backgroundColor": "black" }}>
-
+    <div style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}> {/* Adjust the transparency as needed */}
       <Carousel>
         {carouselItemData}
       </Carousel>
-
     </div>
     // <ShadowBox mode="top">
     //   <div style={ShadowTopStyle}>

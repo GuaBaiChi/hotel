@@ -16,3 +16,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 } */
+
+body {
+  background-image: url('./Images/space-bg.jpg');
+  /* https://unblast.com/10-free-space-background-images-jpg/ */
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Fix the background image in place */
+}
