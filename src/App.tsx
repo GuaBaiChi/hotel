@@ -2,10 +2,11 @@ import React from 'react';
 import './App.css'
 import HeaderNavBar from './Components/Header/HeaderNavBar';
 import About from './Components/About/About';
-import Book from './Components/Book/Book';
+import Book from './Components/Pages/Book/Book';
 import Footer from './Components/Footer/Footer';
 import ImageCarousel from './Components/ImageCarousel/ImageCarousel';
 import CarouselTest from './Components/ImageCarousel/CarouselTest';
+import Contest from './Components/Pages/Contest/Contest';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
       <About />
       <Book />
       <Footer />
+      <Contest />
     </div>
   );
 };

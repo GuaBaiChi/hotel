@@ -1,0 +1,39 @@
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.5) !important; 
+}
+
+.language-dropdown {
+  background-color: rgba(0, 0, 0, 0); /* Initial background color same as navbar */
+}
+
+.language-dropdown .dropdown-toggle {
+  color: #ffffff; /* Text color */
+}
+
+.language-dropdown .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+  border: none; /* Remove border */
+}
+
+.language-dropdown .dropdown-item {
+  color: #ffffff; /* Text color */
+}
+
+.language-dropdown .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Background color on hover with increased transparency */
+}
+
+/* Adjust text color for all navbar links */
+.navbar .nav-link,
+.navbar-brand {
+  color: #ffffff !important; /* Text color for all navbar links */
+}
+
+/* Adjust hover background color for navbar links */
+.navbar .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker background color on hover */
+}
