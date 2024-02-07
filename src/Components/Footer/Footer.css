@@ -1,15 +1,7 @@
 .Footer {
-  /* position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-  font-family: "Poppins ExtraBold";
-  padding: 45px;
-  background-color: white;   */
   text-align: center;
   background-color: white;
-  /* padding: 10%;  */
+  padding-top: 20px; /* Add padding to the top of the footer */
 }
 
 .FooterContainer {
@@ -17,4 +9,14 @@
   padding-right: 20px;
   background-color: black;
   text-align: center;
+}
+
+.colz-icon {
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  height: 100px;
+}
+
+.colz-icon a {
+  margin: 0 5px; /* Adjust horizontal spacing between icons */
 }

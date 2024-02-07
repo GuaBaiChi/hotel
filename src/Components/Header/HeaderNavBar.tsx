@@ -15,7 +15,7 @@ function HeaderNavbar() {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 0) {
         setIsScrolled(true);
-        setBrandText("FL");
+        setBrandText("~FP~");
       } else {
         setIsScrolled(false);
         setBrandText("Fhloston Paradise");
@@ -60,7 +60,7 @@ function HeaderNavbar() {
           variant="dark"
         >
           <Container>
-            <Navbar.Brand href="/">{brandText}</Navbar.Brand>
+            <Navbar.Brand href="/" className="brand-text">{brandText}</Navbar.Brand> {/* Apply custom class for styling */}
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
