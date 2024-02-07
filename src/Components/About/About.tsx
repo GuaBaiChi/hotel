@@ -11,7 +11,7 @@ interface Hotel {
 
 function HotelLandingPage({ hotel }: { hotel: Hotel }) {
   return (
-    <div className="About">
+    <div className="about">
       <h1>{hotel.name}</h1>
       <p>{hotel.description}</p>
       <main>
@@ -41,7 +41,7 @@ export const hotelData: Hotel = {
 const About: React.FC = () => {
   return (
     <div className="AboutContainer">
-      <div className="About">
+      <div className="about">
         <HotelLandingPage hotel={hotelData} />
       </div>
     </div>

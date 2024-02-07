@@ -1,10 +1,10 @@
-.Footer {
+.footer {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7); /* Set darker background color */
-  padding-top: 20px; /* Add padding to the top of the footer */
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 20px;
 }
 
-.FooterContainer {
+.footer-container {
   text-align: center;
   color: white;
 }
@@ -17,12 +17,12 @@
 }
 
 .colz-icon a {
-  margin: 0 10px; /* Increase horizontal spacing between icons */
-  font-size: 24px; /* Adjust icon size */
+  margin: 0 10px;
+  font-size: 24px;
   color: white;
-  transition: color 0.3s ease; /* Add transition effect for color change */
+  transition: color 0.3s ease;
 }
 
 .colz-icon a:hover {
-  color: #999; /* Change icon color on hover to lighter */
+  color: #999;
 }

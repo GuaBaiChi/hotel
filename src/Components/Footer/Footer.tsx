@@ -3,8 +3,8 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="FooterContainer">
-      <div className="Footer">
+    <div className="footer-container">
+      <div className="footer">
         <div>{hotelData.name}</div>
         <div>Phone: {hotelData.phone}</div>
         <div>Email: {hotelData.email}</div>

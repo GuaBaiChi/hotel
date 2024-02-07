@@ -24,7 +24,6 @@ function HeaderNavbar() {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -54,13 +53,13 @@ function HeaderNavbar() {
       <div>
         <Navbar
           expand="lg"
-          className={`${isScrolled ? "scrolled" : ""} main-navbar`} // Added 'main-navbar' class
+          className={`${isScrolled ? "scrolled" : ""} main-navbar`}
           fixed="top"
           expanded={!collapsed}
           variant="dark"
         >
           <Container>
-            <Navbar.Brand href="/" className="brand-text">{brandText}</Navbar.Brand> {/* Apply custom class for styling */}
+            <Navbar.Brand href="/" className="brand-text">{brandText}</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -73,7 +72,6 @@ function HeaderNavbar() {
               </Nav>
             </Navbar.Collapse>
 
-            {/* Language Dropdown - Always rendered */}
             <Navbar.Collapse id="language-navbar-nav">
               <Nav className="ml-auto">
                 <NavDropdown title="Language" id="language-dropdown" className="language-dropdown">

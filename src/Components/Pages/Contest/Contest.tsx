@@ -1,7 +1,9 @@
 export default function Contest() {
   return (
     <div>
-
+      <p>
+        Hello
+      </p>
     </div>
   )
 }

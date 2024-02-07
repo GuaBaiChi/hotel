@@ -1,7 +1,9 @@
 export default function Entertainment() {
   return (
     <div>
-      Hello
+      <p>
+        Hello
+      </p>
     </div>
   )
 }
