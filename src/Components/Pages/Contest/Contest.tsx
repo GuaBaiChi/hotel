@@ -1,9 +1,9 @@
 export default function Contest() {
   return (
     <div>
-      {/* <p>
+      <p>
         Hello
-      </p> */}
+      </p>
     </div>
   )
 }

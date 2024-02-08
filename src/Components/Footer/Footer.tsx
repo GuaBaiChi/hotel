@@ -1,4 +1,4 @@
-import { hotelData } from "../About/About";
+import { hotelData } from "../Data/HotelData";
 import "./Footer.css";
 
 export default function Footer() {

@@ -1,15 +1,8 @@
 import React from 'react';
 import './About.css';
+import { Hotel, hotelData } from '../../Data/HotelData';
 
-interface Hotel {
-  name: string;
-  description: string;
-  imageUrl: string;
-  phone: string;
-  email: string;
-}
-
-function HotelLandingPage({ hotel }: { hotel: Hotel }) {
+function HotelAboutPage({ hotel }: { hotel: Hotel }) {
   return (
     <div className="about">
       <h1>{hotel.name}</h1>
@@ -30,22 +23,14 @@ function HotelLandingPage({ hotel }: { hotel: Hotel }) {
   );
 }
 
-export const hotelData: Hotel = {
-  name: "Luxury Resort",
-  description: "Experience luxury at our beautiful resort.",
-  imageUrl: "https://example.com/hotel-image.jpg",
-  phone: "0-123-456-789",
-  email: "Fhloston@Paradise.com",
-};
-
-const About: React.FC = () => {
+function About() {
   return (
     <div className="AboutContainer">
       <div className="about">
-        <HotelLandingPage hotel={hotelData} />
+        <HotelAboutPage hotel={hotelData} />
       </div>
     </div>
   );
-};
+}
 
 export default About;

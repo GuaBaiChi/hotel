@@ -1,3 +1,13 @@
+<!-- todo -->
+rooms in cards
+calendar date picker for choosing your stay
+dialogue that lets users choose a room option for their selected dates.
+
+add to cart
+log the user's name, selected rooms, and stay duration
+
+
+
 # To create a react app with Typescript
 
 https://create-react-app.dev/docs/adding-typescript/

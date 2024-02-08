@@ -1,16 +1,20 @@
 import React from 'react';
 import './Home.css';
-import HeaderNavBar from '../Header/HeaderNavBar';
-import CarouselTest from '../ImageCarousel/CarouselTest';
-import Footer from '../Footer/Footer';
+import HeaderNavBar from '../../HeaderNavBar/HeaderNavBar';
+import CarouselTest from '../../ImageCarousel/CarouselTest';
+import Footer from '../../Footer/Footer';
+import { Hotel, hotelData } from '../../Data/HotelData';
 
-interface Hotel {
-  name: string;
-  description: string;
-  imageUrl: string;
-  phone: string;
-  email: string;
-}
+// ship pics
+import shipOcean from '../../Images/shipOcean.png';
+import shipPlanet from '../../Images/shipPlanet.png';
+import shipSunset from '../../Images/shipSunset.jpg';
+
+export const SHIP_PICS = [
+  // { image: shipPlanet },
+  { image: shipSunset },
+  { image: shipOcean }
+];
 
 function HotelLandingPage({ hotel }: { hotel: Hotel }) {
   return (
@@ -33,27 +37,19 @@ function HotelLandingPage({ hotel }: { hotel: Hotel }) {
   );
 }
 
-export const hotelData: Hotel = {
-  name: "Luxury Resort",
-  description: "Experience luxury at our beautiful resort.",
-  imageUrl: "https://example.com/hotel-image.jpg",
-  phone: "0-123-456-789",
-  email: "Fhloston@Paradise.com",
-};
-
-const Home: React.FC = () => {
+function Home() {
   return (
-    <div>
-      <HeaderNavBar />
+    <>
       <CarouselTest />
       <div className="home-container">
         <div className="home">
           <HotelLandingPage hotel={hotelData} />
         </div>
       </div>
-      <Footer />
-    </div>
+    </>
   );
-};
+}
+
+
 
 export default Home;

@@ -1,31 +1,32 @@
 import React from 'react';
-import './App.css'
-import HeaderNavBar from './Components/Header/HeaderNavBar';
-import About from './Components/About/About';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+
+// pages
+import Home from './Components/Pages/Home/Home';
 import Book from './Components/Pages/Book/Book';
-import Footer from './Components/Footer/Footer';
-import ImageCarousel from './Components/ImageCarousel/ImageCarousel';
-import CarouselTest from './Components/ImageCarousel/CarouselTest';
+import About from './Components/Pages/About/About';
 import Contest from './Components/Pages/Contest/Contest';
-import Home from './Components/Home/Home';
+
+// static components
+import HeaderNavbar from './Components/HeaderNavBar/HeaderNavBar';
+import Footer from './Components/Footer/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      {/* <div> */}
-      {/* <TabContainer /> */}
-      {/* <ContactInfo /> */}
-      {/* <BookingCalendar /> */}
-      {/* <SiteDescription /> */}
-      {/* <NavBar /> */}
-      {/* <ImageCarousel /> */}
-      {/* <HeaderNavBar /> */}
-      {/* <CarouselTest /> */}
-      <Home />
-      {/* <Footer /> */}
-      {/* <About /> */}
-      {/* <Book /> */}
-      {/* <Contest /> */}
+    <div>
+      <Router>
+        <HeaderNavbar />
+        <div className="App">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/book' element={<Book />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contest' element={<Contest />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 };

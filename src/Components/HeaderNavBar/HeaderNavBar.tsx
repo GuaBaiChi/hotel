@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./HeaderNavBar.css";
+import { Link } from "react-router-dom";
+
 
 function HeaderNavbar() {
   const [collapsed, setCollapsed] = useState(true);
@@ -63,12 +65,13 @@ function HeaderNavbar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#Home">Home</Nav.Link>
-                <Nav.Link href="#About">About</Nav.Link>
-                <Nav.Link href="#Book">Book</Nav.Link>
-                <Nav.Link href="#Entertainment">Entertainment</Nav.Link>
-                <Nav.Link href="#Dining">Dining</Nav.Link>
-                <Nav.Link href="#Spa">Spa</Nav.Link>
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                <Nav.Link as={Link} to="/about">About</Nav.Link>
+                <Nav.Link as={Link} to="/book">Book</Nav.Link>
+                <Nav.Link as={Link} to="/entertainment">Entertainment</Nav.Link>
+                <Nav.Link as={Link} to="/dining">Dining</Nav.Link>
+                <Nav.Link as={Link} to="/spa">Spa</Nav.Link>
+
               </Nav>
             </Navbar.Collapse>
 
