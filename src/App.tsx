@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 import ImageCarousel from './Components/ImageCarousel/ImageCarousel';
 import CarouselTest from './Components/ImageCarousel/CarouselTest';
 import Contest from './Components/Pages/Contest/Contest';
+import Home from './Components/Home/Home';
 
 const App: React.FC = () => {
   return (
@@ -16,14 +17,15 @@ const App: React.FC = () => {
       {/* <ContactInfo /> */}
       {/* <BookingCalendar /> */}
       {/* <SiteDescription /> */}
-      <HeaderNavBar />
       {/* <NavBar /> */}
       {/* <ImageCarousel /> */}
-      <CarouselTest />
-      <About />
-      <Book />
-      <Footer />
-      <Contest />
+      {/* <HeaderNavBar /> */}
+      {/* <CarouselTest /> */}
+      <Home />
+      {/* <Footer /> */}
+      {/* <About /> */}
+      {/* <Book /> */}
+      {/* <Contest /> */}
     </div>
   );
 };

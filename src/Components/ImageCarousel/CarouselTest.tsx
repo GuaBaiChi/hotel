@@ -7,7 +7,7 @@ import shipPlanet from '../../Images/shipPlanet.png';
 import shipSunset from '../../Images/shipSunset.jpg';
 
 export const SHIP_PICS = [
-  { image: shipPlanet },
+  // { image: shipPlanet },
   { image: shipSunset },
   { image: shipOcean }
 ];
