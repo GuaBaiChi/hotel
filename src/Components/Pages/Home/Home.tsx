@@ -6,9 +6,9 @@ import Footer from '../../Footer/Footer';
 import { Hotel, hotelData } from '../../Data/HotelData';
 
 // ship pics
-import shipOcean from '../../Images/shipOcean.png';
-import shipPlanet from '../../Images/shipPlanet.png';
-import shipSunset from '../../Images/shipSunset.jpg';
+import shipOcean from '../../../Images/shipOcean.png';
+import shipPlanet from '../../../Images/shipPlanet.png';
+import shipSunset from '../../../Images/shipSunset.jpg';
 
 export const SHIP_PICS = [
   // { image: shipPlanet },
