@@ -6,6 +6,10 @@ dialogue that lets users choose a room option for their selected dates.
 add to cart
 log the user's name, selected rooms, and stay duration
 
+https://www.cityofdreamsmacau.com/en
+https://www.cityofdreamsmacau.com/en/stay/morpheus
+
+
 
 
 # To create a react app with Typescript

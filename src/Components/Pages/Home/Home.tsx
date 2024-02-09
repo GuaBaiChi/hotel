@@ -1,8 +1,4 @@
-import React from 'react';
 import './Home.css';
-import HeaderNavBar from '../../HeaderNavBar/HeaderNavBar';
-import CarouselTest from '../../ImageCarousel/CarouselTest';
-import Footer from '../../Footer/Footer';
 import { Hotel, hotelData } from '../../Data/HotelData';
 
 // ship pics
@@ -10,7 +6,12 @@ import shipOcean from '../../../Images/shipOcean.png';
 import shipPlanet from '../../../Images/shipPlanet.png';
 import shipSunset from '../../../Images/shipSunset.jpg';
 
-export const SHIP_PICS = [
+
+// test
+import CarouselComponent from '../../ImageCarousel/CarouselComponent';
+
+
+const SHIP_PICS = [
   // { image: shipPlanet },
   { image: shipSunset },
   { image: shipOcean }
@@ -40,7 +41,7 @@ function HotelLandingPage({ hotel }: { hotel: Hotel }) {
 function Home() {
   return (
     <>
-      <CarouselTest />
+      <CarouselComponent items={SHIP_PICS} />
       <div className="home-container">
         <div className="home">
           <HotelLandingPage hotel={hotelData} />

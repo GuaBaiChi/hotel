@@ -1,0 +1,13 @@
+.room-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: calc(100vh - 100px);
+}
+
+.room-card {
+  margin: 10px;
+}
