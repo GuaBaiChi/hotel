@@ -23,7 +23,7 @@ export default function Footer() {
           </Nav>
         </div>
       </div>
-      <div className="colz-icon">
+      <div className="footer-icons">
         <a href="mailto:leon.antonio.rodriguez.sanpere@gmail.com">
           <i className="fa fa-envelope"></i>
         </a>
@@ -33,6 +33,9 @@ export default function Footer() {
         <a href="https://github.com/GuaBaiChi">
           <i className="fa fa-github-square"></i>
         </a>
+      </div>
+      <div className="copyright">
+        &copy; {2024} {hotelData.name}. All rights reserved. | Designed by Leon Rodriguez
       </div>
     </div>
   );

@@ -20,19 +20,29 @@
 
 .footer-links {
   display: flex;
-  justify-content: flex-end; /* Align links to the right */
-  flex: 1; /* Allow links to occupy remaining space */
+  justify-content: flex-end;
+  flex: 1;
 }
 
-/* icons */
-.colz-icon {
+.footer-links .nav-link {
+  color: white !important;
+}
+
+.footer-links .nav-link:hover {
+  color: blue !important;
+  text-decoration: underline !important;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Icons */
+.footer-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
 }
 
-.colz-icon a {
+.footer-icons a {
   margin: 0 5px;
   font-size: 18px; 
   color: white;
@@ -41,4 +51,9 @@
 
 .colz-icon a:hover {
   color: #999;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 12px;
 }

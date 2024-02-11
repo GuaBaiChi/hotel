@@ -7,7 +7,7 @@ export type Hotel = {
 }
 
 export const hotelData: Hotel = {
-  name: "Luxury Resort",
+  name: "Fhloston Paradise",
   description: "Experience luxury at our beautiful resort.",
   imageUrl: "https://example.com/hotel-image.jpg",
   phone: "0-123-456-789",
