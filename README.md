@@ -1,10 +1,17 @@
 <!-- todo -->
-rooms in cards
-calendar date picker for choosing your stay
-dialogue that lets users choose a room option for their selected dates.
+1. rooms in cards
+2. calendar date picker for choosing your stay
+3. dialogue that lets users choose a room option for their selected dates.
 
-add to cart
-log the user's name, selected rooms, and stay duration
+4. add to cart
+5. log the user's name, selected rooms, and stay duration
+
+6. .carousel-container
+
+
+
+
+
 
 https://www.cityofdreamsmacau.com/en
 https://www.cityofdreamsmacau.com/en/stay/morpheus

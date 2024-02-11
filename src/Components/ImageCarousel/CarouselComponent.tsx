@@ -2,15 +2,15 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './Carousel.css';
 
-interface CarouselItem {
+type CarouselItem = {
   image: string;
 }
 
-interface Props {
+type CarouselProps = {
   items: CarouselItem[];
 }
 
-function CarouselComponent({ items }: Props) {
+function CarouselComponent({ items }: CarouselProps) {
   const carouselItemData = items.map((item, index) => (
     <Carousel.Item key={index}>
       <div className="carousel-container" style={{ backgroundImage: `url(${item.image})` }}>
