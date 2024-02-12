@@ -8,6 +8,7 @@
 
 6. .carousel-container
 
+https://github.com/jacobmillsfl/EclecticPickup/blob/main/frontend/src/Views/Admin/CreateEvent.tsx
 
 
 
