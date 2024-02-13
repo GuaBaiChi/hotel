@@ -13,12 +13,14 @@ https://github.com/jacobmillsfl/EclecticPickup/blob/main/frontend/src/Views/Admi
 
 
 
-
+<!-- Inspiration -->
 https://www.cityofdreamsmacau.com/en
 https://www.cityofdreamsmacau.com/en/stay/morpheus
 
 
 
+
+----
 
 # To create a react app with Typescript
 
