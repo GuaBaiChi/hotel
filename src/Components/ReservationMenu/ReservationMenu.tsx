@@ -5,18 +5,15 @@ function ReservationMenu() {
   const [checkInDate, setCheckInDate] = useState('');
   const [checkOutDate, setCheckOutDate] = useState('');
   const [numPeople, setNumPeople] = useState(1);
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleCheckInChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setCheckInDate(String(value));
-    setErrorMessage('');
   };
 
   const handleCheckOutChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setCheckOutDate(String(value));
-    setErrorMessage('');
   };
 
   const handleNumPeopleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,11 +33,7 @@ function ReservationMenu() {
 
   // Function to calculate disabled dates for check-in date picker (past dates)
   const startDate = new Date().toISOString().split('T')[0];
-  // const minDate = new Date().toISOString().split('T')[0];
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1); // Set the date to tomorrow
-
-  const minDate = tomorrow.toISOString().split('T')[0];
+  const minDate = new Date().toISOString().split('T')[0];
 
   return (
     <div className="reservation-container">
@@ -58,7 +51,6 @@ function ReservationMenu() {
           Number of People:
           <input type="number" value={numPeople} onChange={handleNumPeopleChange} min={1} style={{ width: '50px' }} required />
         </label>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button type="submit">Submit</button>
       </form>
     </div>
