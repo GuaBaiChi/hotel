@@ -14,20 +14,18 @@ import Footer from './Components/Footer/Footer';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="App">
       <Router>
         <HeaderNavbar />
-        <div className="App">
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/book' element={<Book />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/contest' element={<Contest />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/book' element={<Book />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contest' element={<Contest />} />
+        </Routes>
         <Footer />
       </Router>
-    </div>
+    </div >
   );
 };
 
