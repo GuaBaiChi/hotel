@@ -8,12 +8,14 @@ function ReservationMenu() {
 
   const handleCheckInChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
-    setCheckInDate(String(value));
+    setCheckInDate(value);
+    // When check-in date changes, reset check-out date
+    setCheckOutDate('');
   };
 
   const handleCheckOutChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
-    setCheckOutDate(String(value));
+    setCheckOutDate(value);
   };
 
   const handleNumPeopleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,7 +35,13 @@ function ReservationMenu() {
 
   // Function to calculate disabled dates for check-in date picker (past dates)
   const startDate = new Date().toISOString().split('T')[0];
-  const minDate = new Date().toISOString().split('T')[0];
+
+  // Calculate minimum date for check-out date picker based on selected check-in date
+  const minCheckOutDate = checkInDate ? new Date(checkInDate) : new Date();
+  minCheckOutDate.setDate(minCheckOutDate.getDate() + 1);
+
+  // Calculate the total number of nights
+  const totalNights = checkInDate && checkOutDate ? Math.ceil((new Date(checkOutDate).getTime() - new Date(checkInDate).getTime()) / (1000 * 60 * 60 * 24)) : 0;
 
   return (
     <div className="reservation-container">
@@ -45,11 +53,14 @@ function ReservationMenu() {
         </label>
         <label>
           Check-Out Date:
-          <input type="date" value={checkOutDate} onChange={handleCheckOutChange} min={checkInDate} disabled={!checkInDate} required />
+          <input type="date" value={checkOutDate} onChange={handleCheckOutChange} min={minCheckOutDate.toISOString().split('T')[0]} disabled={!checkInDate} required />
         </label>
         <label>
           Number of People:
           <input type="number" value={numPeople} onChange={handleNumPeopleChange} min={1} style={{ width: '50px' }} required />
+        </label>
+        <label>
+          Total Nights: {totalNights}
         </label>
         <button type="submit">Submit</button>
       </form>
