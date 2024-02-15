@@ -4,7 +4,7 @@ import { Hotel, hotelData } from '../../Data/HotelData';
 
 function HotelAboutPage({ hotel }: { hotel: Hotel }) {
   return (
-    <div className="about">
+    <div>
       <h1>{hotel.name}</h1>
       <p>{hotel.description}</p>
       <main>
@@ -25,10 +25,8 @@ function HotelAboutPage({ hotel }: { hotel: Hotel }) {
 
 function About() {
   return (
-    <div className="AboutContainer">
-      <div className="about">
-        <HotelAboutPage hotel={hotelData} />
-      </div>
+    <div className="about">
+      <HotelAboutPage hotel={hotelData} />
     </div>
   );
 }

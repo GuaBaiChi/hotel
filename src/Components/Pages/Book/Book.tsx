@@ -34,7 +34,9 @@ const rooms: Room[] = [
 function Book() {
   return (
     <>
-      <ReservationMenu />
+      <ReservationMenu onSubmit={function (data: { startDate: string; endDate: string; guestCount: string; }): void {
+        throw new Error('Function not implemented.');
+      }} />
       {/* <Calendar /> */}
       <div className="room-cards-container">
         {rooms.map(room => (

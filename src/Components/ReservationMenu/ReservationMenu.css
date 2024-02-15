@@ -1,7 +1,7 @@
 .reservation-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 5% 10% 0% 10%;
-  text-align: left;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  margin: 5% 10% 0% 10% !important;
+  /* text-align: left; */
   color: white;
-  padding: 5px;
+  /* padding: 5px; */
 }
