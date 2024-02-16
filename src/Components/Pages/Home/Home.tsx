@@ -1,22 +1,10 @@
 import './Home.css';
-import { Hotel, hotelData } from '../../Data/HotelData';
-
-// ship pics
-import shipOcean from '../../../Images/ShipImages/shipOcean.png';
-import shipPlanet from '../../../Images/ShipImages/shipPlanet.png';
-import shipSunset from '../../../Images/ShipImages/shipSunset.jpg';
-
-
-// test
 import CarouselComponent from '../../ImageCarousel/CarouselComponent';
+
+// data
+import { Hotel, hotelData } from '../../Data/HotelData';
 import { SHIP_PICS } from '../../Data/ShipImagesData';
 
-
-// const SHIP_PICS = [
-//   // { image: shipPlanet },
-//   { image: shipSunset },
-//   { image: shipOcean }
-// ];
 
 function HotelLandingPage({ hotel }: { hotel: Hotel }) {
   return (

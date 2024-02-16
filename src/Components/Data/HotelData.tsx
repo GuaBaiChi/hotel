@@ -28,42 +28,42 @@ export const rooms: Room[] = [
   {
     id: 1,
     name: 'Standard Room 1',
-    description: 'A comfortable room with all basic amenities',
+    description: 'A comfortable room with all basic amenities.',
     price: 100,
     imageUrl: 'https://example.com/standard-room.jpg'
   },
   {
     id: 2,
     name: 'Deluxe Room 2',
-    description: 'A luxurious room with additional amenities',
+    description: 'Indulge in luxury with our Deluxe Room. Experience spaciousness and elegance with additional amenities.',
     price: 150,
     imageUrl: 'https://example.com/deluxe-room.jpg'
   },
   {
     id: 3,
     name: 'Deluxe Room 3',
-    description: 'A luxurious room with additional amenities',
+    description: 'Experience unparalleled comfort and style in our Deluxe Room. Enjoy upgraded features and luxurious furnishings.',
     price: 200,
     imageUrl: 'https://example.com/deluxe-room.jpg'
   },
   {
     id: 4,
     name: 'Deluxe Room 4',
-    description: 'A luxurious room with additional amenities',
+    description: 'Step into luxury with our Deluxe Room. Immerse yourself in sophistication and relaxation with premium amenities.',
     price: 250,
     imageUrl: 'https://example.com/deluxe-room.jpg'
   },
   {
     id: 5,
     name: 'Deluxe Room 5',
-    description: 'A luxurious room with additional amenities',
+    description: 'Experience the pinnacle of luxury in our Deluxe Room. Revel in opulence and comfort with unparalleled amenities and personalized service.',
     price: 300,
     imageUrl: 'https://example.com/deluxe-room.jpg'
   },
   {
     id: 6,
     name: 'Deluxe Room 6',
-    description: 'A luxurious room with additional amenities',
+    description: 'Indulge in the ultimate luxury experience with our Deluxe Room. Elevate your stay with lavish amenities and exquisite attention to detail.',
     price: 350,
     imageUrl: 'https://example.com/deluxe-room.jpg'
   },
