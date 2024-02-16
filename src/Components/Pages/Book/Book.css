@@ -3,11 +3,17 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* margin-top: 10px; */
-  /* margin-bottom: 20px; */
   min-height: calc(80vh - 100px);
 }
 
 .room-card {
-  margin: 10px;
+  margin: 10px; /* Adjust the spacing between cards */
+}
+
+.card {
+  width: 18rem;
+}
+
+.room-card .card {
+  margin-bottom: 20px;
 }

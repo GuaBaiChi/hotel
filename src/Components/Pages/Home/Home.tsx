@@ -2,20 +2,21 @@ import './Home.css';
 import { Hotel, hotelData } from '../../Data/HotelData';
 
 // ship pics
-import shipOcean from '../../../Images/shipOcean.png';
-import shipPlanet from '../../../Images/shipPlanet.png';
-import shipSunset from '../../../Images/shipSunset.jpg';
+import shipOcean from '../../../Images/ShipImages/shipOcean.png';
+import shipPlanet from '../../../Images/ShipImages/shipPlanet.png';
+import shipSunset from '../../../Images/ShipImages/shipSunset.jpg';
 
 
 // test
 import CarouselComponent from '../../ImageCarousel/CarouselComponent';
+import { SHIP_PICS } from '../../Data/ShipImagesData';
 
 
-const SHIP_PICS = [
-  // { image: shipPlanet },
-  { image: shipSunset },
-  { image: shipOcean }
-];
+// const SHIP_PICS = [
+//   // { image: shipPlanet },
+//   { image: shipSunset },
+//   { image: shipOcean }
+// ];
 
 function HotelLandingPage({ hotel }: { hotel: Hotel }) {
   return (

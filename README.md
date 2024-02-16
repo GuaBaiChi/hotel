@@ -1,32 +1,6 @@
-<!-- todo -->
-1. rooms in cards
-2. calendar date picker for choosing your stay
-3. dialogue that lets users choose a room option for their selected dates.
-4. add to cart
-5. log the user's name, selected rooms, and stay duration
-6. .carousel-container
-7. add site map
-8. add careers
-9. add partners, taxi/airport, nearby sights, restaurants, tourism,
-10. Events, deals, membership, VIP, information, marketing
-11. Most popular, reviews, deals
-12. SEO, a page for each room/dish
-13. alt-text for google
-14. story
-15. directions/address
-16. call, business hours
-17. fix the css on About
-
-https://github.com/jacobmillsfl/EclecticPickup/blob/main/frontend/src/Views/Admin/CreateEvent.tsx
-
-
-
-
 <!-- Inspiration -->
 https://www.cityofdreamsmacau.com/en
 https://www.cityofdreamsmacau.com/en/stay/morpheus
-
-
 
 
 ----

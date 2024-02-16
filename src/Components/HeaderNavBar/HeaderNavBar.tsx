@@ -65,12 +65,12 @@ function HeaderNavbar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to="/">Home</Nav.Link>
-                <Nav.Link as={Link} to="/about">About</Nav.Link>
+                {/* <Nav.Link as={Link} to="/">Home</Nav.Link> */}
                 <Nav.Link as={Link} to="/book">Book</Nav.Link>
                 <Nav.Link as={Link} to="/entertainment">Entertainment</Nav.Link>
                 <Nav.Link as={Link} to="/dining">Dining</Nav.Link>
                 <Nav.Link as={Link} to="/spa">Spa</Nav.Link>
+                <Nav.Link as={Link} to="/about">About</Nav.Link>
 
               </Nav>
             </Navbar.Collapse>
