@@ -1,3 +1,5 @@
+// App.tsx
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -17,15 +19,19 @@ const App: React.FC = () => {
     <div className="App">
       <Router>
         <HeaderNavbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/book' element={<Book />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contest' element={<Contest />} />
-        </Routes>
-        <Footer />
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/book' element={<Book />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contest' element={<Contest />} />
+          </Routes>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
       </Router>
-    </div >
+    </div>
   );
 };
 

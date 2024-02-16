@@ -1,21 +1,13 @@
 .App {
-  /* text-align: center; */
-  /* background-color: white; */
-  /* padding: 20px; */
-  /* background-color: black; */
-}
-
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+  min-height: 100vh;
+}
+
+/* Ensure that the content area stretches to occupy remaining space */
+main {
+  flex: 1;
+}
 
 body {
   background-image: url('./Images/space-bg.jpg');
