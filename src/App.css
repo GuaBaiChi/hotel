@@ -10,7 +10,8 @@ main {
 }
 
 body {
-  background-image: url('./Images/Background/space-bg.jpg');
+  background-color: lightgray;
+  /* background-image: url('./Images/Background/space-bg.jpg'); */
   /* https://unblast.com/10-free-space-background-images-jpg/ */
   background-size: cover; /* Cover the entire viewport */
   background-repeat: no-repeat; /* Prevent the image from repeating */
