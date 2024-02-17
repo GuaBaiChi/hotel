@@ -18,6 +18,39 @@ import Ruby1 from '../../Images/Entertainment/Ruby1.png'
 // import Ruby2 from '../../Images/Entertainment/Ruby2.png'
 // import Ruby3 from '../../Images/Entertainment/Ruby3.png'
 
+// Room imports
+import Room1 from '../../Images/RoomImages/Room1.jpg'
+import Room2 from '../../Images/RoomImages/Room2.jpg'
+import Room3 from '../../Images/RoomImages/Room3.jpg'
+import Room4 from '../../Images/RoomImages/Room4.jpg'
+import Room5 from '../../Images/RoomImages/Room5.jpg'
+import Room6 from '../../Images/RoomImages/Room6.jpg'
+import Room7 from '../../Images/RoomImages/Room7.jpg'
+
+export const ROOM_PICS = [
+  {
+    image: Room1
+  },
+  {
+    image: Room2
+  },
+  {
+    image: Room3
+  },
+  {
+    image: Room4
+  },
+  {
+    image: Room5
+  },
+  {
+    image: Room6
+  },
+  {
+    image: Room7
+  },
+]
+
 export const SHIP_PICS = [
   {
     image: shipPlanet
