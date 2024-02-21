@@ -1,6 +1,7 @@
 .App {
-  display: flex;
   flex-direction: column;
+/* display and min-height can be commented out to get rid of snowcone */
+  display: flex;
   min-height: 100vh;
 }
 
