@@ -1,5 +1,5 @@
 // https://www.pexels.com/search/hotel%20room/
-import { ROOM_PICS } from "./ShipImagesData";
+import { ROOM_PICS } from "./HotelImagesData";
 
 
 
@@ -75,3 +75,4 @@ export const rooms: Room[] = [
   },
   // Add more room data as needed
 ];
+
