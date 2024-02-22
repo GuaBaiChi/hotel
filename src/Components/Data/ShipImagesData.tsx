@@ -52,9 +52,9 @@ export const ROOM_PICS = [
 ]
 
 export const SHIP_PICS = [
-  {
-    image: shipPlanet
-  },
+  // {
+  //   image: shipPlanet
+  // },
   {
     image: shipSunset
   },
