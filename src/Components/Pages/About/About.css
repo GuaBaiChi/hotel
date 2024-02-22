@@ -1,7 +1,8 @@
 .about {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10%; 
+  background-color: #444444;
+  padding: 2%; 
   color: white;
-  margin-top: 70px;
+  /* margin-top: 70px; */
+  margin-bottom: 5%;
 }

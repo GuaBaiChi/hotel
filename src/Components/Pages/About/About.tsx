@@ -1,10 +1,11 @@
 import React from 'react';
 import './About.css';
 import { Hotel, hotelData } from '../../Data/HotelData';
+import ContentCarousel from '../../ContentCarousel/ContentCarousel';
 
 function HotelAboutPage({ hotel }: { hotel: Hotel }) {
   return (
-    <div>
+    <div className="about">
       <h1>{hotel.name}</h1>
       <p>{hotel.description}</p>
       <main>
@@ -25,9 +26,12 @@ function HotelAboutPage({ hotel }: { hotel: Hotel }) {
 
 function About() {
   return (
-    <div className="about">
-      <HotelAboutPage hotel={hotelData} />
-    </div>
+    <>
+      <ContentCarousel />
+      <div className="about">
+        <HotelAboutPage hotel={hotelData} />
+      </div>
+    </>
   );
 }
 

@@ -1,43 +1,11 @@
-.navbar {
-  transition: background-color 0.3s ease;
+.custom-navbar {
+  background-color: #444444 !important;
 }
 
-.scrolled {
-  background-color: rgba(0, 0, 0, 0.5) !important; 
+.navbar-collapse {
+  justify-content: space-between;
 }
 
-.language-dropdown {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.language-dropdown .dropdown-toggle {
-  color: #ffffff;
-}
-
-.language-dropdown .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.language-dropdown .dropdown-item {
-  color: #ffffff;
-}
-
-.language-dropdown .dropdown-item:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-.navbar .nav-link,
-.navbar-brand {
-  color: #ffffff !important;
-}
-
-/* Adjust hover background color for navbar links */
-.navbar .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.5); 
-}
-
-/* Make FP bigger */
-.brand-text {
-  font-size: 24px;
+.navbar-nav {
+  margin-right: 20px; /* Adjust the margin as needed */
 }
