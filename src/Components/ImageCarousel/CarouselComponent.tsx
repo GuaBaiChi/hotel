@@ -14,7 +14,7 @@ function CarouselComponent({ items }: CarouselProps) {
   const carouselItemData = items.map((item, index) => (
     <Carousel.Item key={index}>
       <div className="carousel-container" style={{ backgroundImage: `url(${item.image})` }}>
-        {/* <img src={item.image} alt={"can't load"} className="image-style" /> */}
+        {/* Add any content or components you want to display inside the carousel item */}
       </div>
     </Carousel.Item>
   ));
